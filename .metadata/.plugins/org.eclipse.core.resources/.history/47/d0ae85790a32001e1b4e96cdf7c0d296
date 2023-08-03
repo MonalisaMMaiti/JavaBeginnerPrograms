@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class Insertion {
+public static void insertionSort(int arr[])
+{
+	 
+	for (int j=1; j< arr.length;j++)
+	{
+		int key=arr[j];
+		int i=j-1;
+		
+	while(i>-1 && arr[i]>key)
+	{
+		arr[i+1]=arr[i];
+		i--;
+	}
+	arr[i+1]=key;
+		
+	}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner a = new Scanner (System.in);
+		System.out.println("Enter the length of an array");
+		int n= a.nextInt();
+		System.out.println("Enter the element of array :");
+		for (int i=0;i<n;i++)
+		{
+			ArrayList<double> input = new ArrayList<double>();
+			while(a.hasNextDouble());
+		}
+		
+
+	}
+
+}

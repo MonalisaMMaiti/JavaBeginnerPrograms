@@ -1,0 +1,29 @@
+
+class Person {
+	// Instance Variables (Data or "state")
+	int age;
+	String name; 	
+	
+	// Class contain data and methods
+}
+
+public class ClassObjDemo {
+
+	public static void main(String[] args) {
+		// Creating Object of Class Person
+		
+		Person person1= new Person();
+		person1.name = "Tapadyuti Maiti";
+		person1.age=31;
+		
+		Person person2= new Person();
+		person2.name = "Monalisa M Maiti";
+		person2.age=26;
+		
+		System.out.println("Husband Name :"  + person1.name);
+		System.out.println("Husband Age :"  +person1.age);
+		System.out.println("Wife Name :" +person2.name);
+		System.out.println("Wife Age " +person2.age);
+	}
+
+}

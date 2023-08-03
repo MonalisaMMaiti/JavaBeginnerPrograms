@@ -1,0 +1,28 @@
+
+class Robot
+{
+	public void speak(String text)
+	{
+		System.out.println(text);
+	}
+	public void jump(int height) 
+	{
+		System.out.println( "Jumping height :" + height);
+	}
+	public void move(String direction,double distance)
+	{
+		System.out.println("Moving"+distance +" meter in direction " +direction);
+	}
+}
+public class MethodParameter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Robot R1 = new Robot();
+		R1.speak("Hi I'm Sam");
+		R1.jump(7);
+		R1.move("West",14.6);
+
+	}
+
+}

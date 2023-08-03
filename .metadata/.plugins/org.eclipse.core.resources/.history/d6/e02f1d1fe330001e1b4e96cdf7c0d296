@@ -1,0 +1,50 @@
+
+class Person {
+	// Instance Variables (Data or "state")
+	int age;
+	String name; 	
+	
+	// Class contain data and methods
+	//------------------------------------------
+	
+	//1. Void method 
+	void speak() {
+		System.out.println("Hello !! My name is :"+name+" and I'm "+ age+"year old");
+	}
+	
+	//2. Type method
+	int CalculateTheAgeofRetirement()
+	{
+		int leftYears= 65-age;
+		System.out.println("Years left for my retirement is :"+leftYears );
+		return leftYears;
+	}
+	
+	//3. getter method
+	int getAge() {return age;}
+	String getName() {return name;}
+}
+
+public class ClassObjDemo {
+
+	public static void main(String[] args) {
+		// Creating Object of Class Person
+		
+		
+		Person person2= new Person();
+		person2.name = "Monalisa M Maiti";
+		person2.age=26;
+		
+		
+		System.out.println("Wife Name :" +person2.name);
+		System.out.println("Wife Age " +person2.age);
+		person2.speak();
+		person2.CalculateTheAgeofRetirement();
+		
+		int age = person2.getAge();
+		String name=person2.getName();
+		System.out.println("Name is "+name);
+		System.out.println("Age is "+age);
+	}
+
+}

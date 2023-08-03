@@ -1,0 +1,77 @@
+
+class Person {
+	// Instance Variables (Data or "state")
+	int age;
+	String name; 
+	private int newAge;
+	private String newName;
+	
+	// Class contain data and methods
+	//------------------------------------------
+	
+	//1. Void method 
+	void speak() {
+		System.out.println("Hello !! My name is :"+name+" and I'm "+ age+"year old");
+	}
+	
+	//2. Type method
+	int CalculateTheAgeofRetirement()
+	{
+		int leftYears= 65-age;
+		System.out.println("Years left for my retirement is :"+leftYears );
+		return leftYears;
+	}
+	
+	//3. getter method
+	int getAge() 
+	{
+		return age;
+	}
+	String getName() 
+	{
+		return name;
+	}
+	
+	//4. Setter method
+	
+	public void setName (String newName)
+	{
+		this.newName = newName;
+	}
+	public void setAge (int newAge)
+	{
+		this.newAge = newAge;
+	}
+	public void setInfo(String newName, int anewAgege)
+	{
+		setName(newName);
+		setAge(newAge);
+		System.out.println("New Name and Age set to :" + name + age);
+	}
+}
+
+public class ClassObjDemo {
+
+	public static void main(String[] args) {
+		// Creating Object of Class Person
+		Person person2= new Person();
+		person2.name = "Monalisa M Maiti";
+		person2.age=26;
+		System.out.println("Wife Name :" +person2.name);
+		System.out.println("Wife Age " +person2.age);
+		person2.speak();
+		person2.CalculateTheAgeofRetirement();
+		
+		// Calling Getter Method
+		int age = person2.getAge(); 
+		String name=person2.getName();
+		System.out.println("Name is "+name);
+		System.out.println("Age is "+age);
+		
+		// Setting Value to Setter Method and Calling
+		person2.setName("Barbie from Setter Method String");
+		person2.setAge(5);
+		person2.setInfo("Barbie",5);
+	}
+
+}
